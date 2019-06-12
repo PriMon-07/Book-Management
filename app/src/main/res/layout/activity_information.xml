@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:title="Detail View"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:id="@+id/tv_book_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/my_toolbar2"
+            android:layout_marginTop="50dp"
+            android:padding="9dp"
+            android:text="Book Name: "
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/et_book_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/my_toolbar2"
+            android:layout_marginTop="50dp"
+            android:hint="type book name here"
+            android:padding="9dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/tv_book_info_name"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_book_info_name">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/spinner2"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>
